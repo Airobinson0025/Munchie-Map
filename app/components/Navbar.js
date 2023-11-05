@@ -7,16 +7,16 @@ import { IoSearchCircle } from 'react-icons/io5'
 
 const Navbar = () => {
   return (
-    <header className='font-nunito text-lg text-lime-600 flex justify-between items-center p-3 z-1000'>
-      <div className='flex space-x-10'>
+    <header className='font-nunito text-lg text-lime-600 flex justify-between items-center p-3 bg-neutral-900 shadow-sm shadow-neutral-100/20 z-1000 fixed w-full'>
+      <div className='flex space-x-5'>
         <Link href="/" className='text-[1.35rem]  font-semibold'>Munchie Map</Link>
         <div className='flex items-center space-x-1'>
-          <ImLocation size={28} color='#171717'/>
+          <ImLocation size={22} color='white'/>
           <p>Location</p>
         </div>
       </div>
 
-      <div className='flex items-center border-2 border-neutral-800 rounded-full pl-2'>
+      <div className='flex items-center border-[1px] border-neutral-200 rounded-full pl-2'>
         <input 
         placeholder='Search Resturants'
         className='flex-grow bg-transparent outline-none placeholder-gray-400 rounded-md px-3'/>
@@ -25,7 +25,7 @@ const Navbar = () => {
 
       <div className='flex items-center space-x-4'>
         <Link href='/signup'>Sign Up</Link>
-        <BiMenu size={30} color='#171717' className='cursor-pointer'/>
+        <BiMenu size={35} color='white' className='cursor-pointer'/>
       </div>
   </header>
   )

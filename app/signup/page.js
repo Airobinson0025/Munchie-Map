@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 
 
+
 const SignUp = () => {
 
     const [ name, setName ] = useState('')
@@ -36,48 +37,52 @@ const SignUp = () => {
 
 
   return (
-    <div className='flex flex-col items-center justify-center h-screen'>
+    <div className='flex'>
+
+        <div className='h-screen w-1/2 signup-bg'>
+            
+        </div>
         
         <div className='font-nunito w-1/2'> 
-            <form onSubmit={handleSubmit} className='flex flex-col space-y-2 p-12 bg-neutral-900 text-white text-lg rounded-xl shadow-lg shadow-slate-400'>
+            <form onSubmit={handleSubmit} className='flex flex-col justify-center space-y-[7px] p-14 bg-neutral-900 text-white text-lg tracking-wide shadow-lg h-screen'>
                 <h1 className='font-semibold text-center text-3xl'>Create Account</h1>
-                <p className='text-center text-md text-gray-400'>Enter your email below to create an account</p>
+                <p className='text-center text-md text-gray-400'>Enter your information below to create an account</p>
             
-                <label className='font-semibold'>Name:</label>
+                <label className='font-semibold text-[1rem]'>Name:</label>
                 <input
                 value={name} 
                 onChange={(e) => setName(e.target.value)}
                 type='text' 
                 placeholder='Full Name' 
-                className='bg-neutral-800 outline-gray-300 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-400'/>
+                className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500'/>
             
-                <label>Email:</label>
+                <label className='font-semibold text-[1rem]'>Email:</label>
                 <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 type='email'
-                placeholder='example@gmail.com' 
-                className='bg-neutral-800 outline-gray-300 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-400 '/>
+                placeholder='Example@yahoo.com' 
+                className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500 '/>
 
-                <label>Username:</label>
+                <label className='font-semibold text-[1rem]'>Username:</label>
                 <input 
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 type='username' 
                 placeholder='Username' 
-                className='bg-neutral-800 outline-gray-300 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-400 '/>
+                className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500 '/>
 
-               <label>Password</label>
+               <label className='font-semibold text-[1rem]'>Password:</label>
                <input
                value={password}
                onChange={(e) => setPassword(e.target.value)} 
                type='password' 
                placeholder='Password' 
-               className='bg-neutral-800 outline-gray-300 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-400 '/>
+               className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500 '/>
 
                <div className='flex space-x-1 justify-center pt-2'>
                 <p>Already have an account?</p>
-                <Link href='/signin' className='text-lime-600 font-semibold hover:scale-105 hover:underline underline-offset-2 transition duration-200'>Sign In</Link>
+                <Link href='/signin' className='text-lime-600 font-semibold hover:underline underline-offset-2 transition duration-200'>Sign In</Link>
                </div>
 
                <div className='text-center'>

@@ -6,3 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+.signup-bg {
+  background-image: url('/munchie-signup.jpg');
+  background-size: cover;
+  background-position: center;
+}
