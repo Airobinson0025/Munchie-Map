@@ -7,7 +7,7 @@ import { IoSearchCircle } from 'react-icons/io5'
 
 const Navbar = () => {
   return (
-    <header className='font-nunito text-lg text-lime-600 flex justify-between items-center p-3 bg-neutral-900 shadow-sm shadow-neutral-100/20 z-1000 fixed w-full'>
+    <header className='font-nunito text-lg text-lime-600 flex justify-between items-center p-3 bg-neutral-900 shadow-sm shadow-neutral-100/40 z-1000 fixed w-full'>
       <div className='flex space-x-5'>
         <Link href="/" className='text-[1.35rem]  font-semibold'>Munchie Map</Link>
         <div className='flex items-center space-x-1'>
