@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 
 
-
 const SignUp = () => {
 
     const [ name, setName ] = useState('')
@@ -44,7 +43,7 @@ const SignUp = () => {
         </div>
         
         <div className='font-nunito w-1/2'> 
-            <form onSubmit={handleSubmit} className='flex flex-col justify-center space-y-[7px] p-14 bg-neutral-900 text-white text-lg tracking-wide shadow-lg h-screen'>
+            <form onSubmit={handleSubmit} className='flex flex-col justify-center space-y-[7px] p-20 bg-neutral-900 text-white text-lg tracking-wide shadow-lg h-screen'>
                 <h1 className='font-semibold text-center text-3xl'>Create Account</h1>
                 <p className='text-center text-md text-gray-400'>Enter your information below to create an account</p>
             
@@ -53,7 +52,7 @@ const SignUp = () => {
                 value={name} 
                 onChange={(e) => setName(e.target.value)}
                 type='text' 
-                placeholder='Full Name' 
+                placeholder='John Doe' 
                 className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500'/>
             
                 <label className='font-semibold text-[1rem]'>Email:</label>
@@ -69,7 +68,7 @@ const SignUp = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 type='username' 
-                placeholder='Username' 
+                placeholder='Enter a username' 
                 className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500 '/>
 
                <label className='font-semibold text-[1rem]'>Password:</label>
@@ -77,7 +76,7 @@ const SignUp = () => {
                value={password}
                onChange={(e) => setPassword(e.target.value)} 
                type='password' 
-               placeholder='Password' 
+               placeholder='Enter a password' 
                className='bg-neutral-800 outline-offset-1 py-1 pl-2 rounded-md placeholder-gray-500 border-[1px] border-gray-500 '/>
 
                <div className='flex space-x-1 justify-center pt-2'>
